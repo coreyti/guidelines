@@ -1,0 +1,7 @@
+<h1><%= t('.heading') %></h1>
+
+<ul>
+  <%- list.each do |item| -%>
+  <li><%= link_to(item, guideline_path(item)) %></li>
+  <%- end -%>
+</ul>
