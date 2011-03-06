@@ -1,3 +1,4 @@
+*_local
 *.gem
 .bundle
 Gemfile.lock
