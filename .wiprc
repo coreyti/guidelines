@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+[[ -s ".wiprc_fn" ]]    && source ".wiprc_fn"
+[[ -s ".wiprc_local" ]] && source ".wiprc_local"
+
+mode="$1"
+
+fn_check=`type -t $mode`
+if [  "function" == "$fn_check" ] ; then
+  eval $mode
+else
+  echo "default mode"
+fi
